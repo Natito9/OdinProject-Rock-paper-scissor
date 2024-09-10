@@ -19,11 +19,12 @@ else if(randomNumber === 2){
     return "Paper";
 }
 else {
-    return "Scissor";
+    return "Scissors";
 }
 }
 
-//player result rock
+
+//player click rock
 document.getElementById("bRock").addEventListener("click", function() {
     const playerChoice = "Rock";
     const computerResult = computerChoice();
@@ -34,12 +35,61 @@ document.getElementById("bRock").addEventListener("click", function() {
     else if (computerResult === "Paper") {
         document.getElementById("finalResult").innerHTML = "You lost! 💀";
     }
-    else if (computerResult === "Scissor") {
+    else if (computerResult === "Scissors") {
         document.getElementById("finalResult").innerHTML = "You Win! 🤩";
     }
 
+    document.getElementById("computerResultText").innerHTML =  computerResult;
 
+
+    console.log(playerChoice)
+    console.log("vs")
+    console.log(computerResult)
 });
 
+//player click paper
 
-document.getElementById("computerResultText").innerHTML =  computerChoice();
+document.getElementById("bPaper").addEventListener("click", function() {
+    const playerChoice = "Paper";
+    const computerResult = computerChoice();
+
+    if (playerChoice === computerResult) {
+        document.getElementById("finalResult").innerHTML = "It's a tie! 😮‍💨";
+    }
+    else if (computerResult === "Scissors") {
+        document.getElementById("finalResult").innerHTML = "You lost! 💀";
+    }
+    else if (computerResult === "Rock") {
+        document.getElementById("finalResult").innerHTML = "You Win! 🤩";
+    }
+
+    document.getElementById("computerResultText").innerHTML =  computerResult;
+
+    console.log(playerChoice)
+    console.log("vs")
+    console.log(computerResult)
+});
+
+//player click scissors
+
+document.getElementById("bScissors").addEventListener("click", function() {
+    const playerChoice = "Scissors";
+    const computerResult = computerChoice();
+
+    if (playerChoice === computerResult) {
+        document.getElementById("finalResult").innerHTML = "It's a tie! 😮‍💨";
+    }
+    else if (computerResult === "Rock") {
+        document.getElementById("finalResult").innerHTML = "You lost! 💀";
+    }
+    else if (computerResult === "Paper") {
+        document.getElementById("finalResult").innerHTML = "You Win! 🤩";
+    }
+
+    document.getElementById("computerResultText").innerHTML =  computerResult;
+
+    console.log(playerChoice)
+    console.log("vs")
+    console.log(computerResult)
+});
+
