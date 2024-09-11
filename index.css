@@ -1,0 +1,57 @@
+
+
+body{
+    font-family: "Jersey 20";
+    text-align: center;
+}
+
+.border{
+    width: 600px;       
+    height: 600px;
+    border: 5px solid rgb(226, 185, 35);
+    border-radius: 25px;
+    margin: 50px auto;
+    background-color: rgb(254, 224, 124);
+}
+
+h3{
+   
+    font-size: 35px;
+    font-family: "Rubik Scribble";
+    
+}
+
+h1{
+    font-size: 55px ;
+}
+p{
+    font-size: 25px;
+}
+button {
+    width: auto;
+    height: 70px;
+    font-size: 45px;
+    font-family: "Jersey 20";
+    background-color: rgb(229, 87, 26);
+    border-radius: 25px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-width: 0;
+    align-content: center;
+
+}
+#finalResult{
+    font-size: 35px;
+    border: 3px dotted;
+    border-color: rgb(229, 87, 26);
+    border-radius: 25px;
+    padding: 15px;
+    
+  
+}
+#score {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
